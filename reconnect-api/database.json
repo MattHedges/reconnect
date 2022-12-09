@@ -1,0 +1,207 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullName": "Debra Downing",
+      "profileName": "Debbie Downer",
+      "email": "depresseddebbie@aol.com",
+      "isStaff": false
+    },
+    {
+      "id": 2,
+      "fullName": "Jeffrey Dahmer",
+      "profileName": "mystery_meat",
+      "email": "normaldude@aol.com",
+      "isStaff": false
+    },
+    {
+      "id": 3,
+      "fullName": "John Doe",
+      "profileName": "Paranoid Schizophrenic",
+      "email": "Iheardeadpeople@helpme.com",
+      "isStaff": false
+    },
+    {
+      "id": 4,
+      "fullName": "Nancy Negatory",
+      "profileName": "Negative_Nancy",
+      "email": "glasshalfempty@gmail.com",
+      "isStaff": true
+    },
+    {
+      "id": 5,
+      "fullName": "Robert Polar",
+      "profileName": "Bipolar Bob",
+      "email": "manicmaniac@hotmail.com",
+      "isStaff": true
+    },
+    {
+      "id": 6,
+      "fullName": "Ann Anxiety",
+      "profileName": "pAnnic_Attack",
+      "email": "socialAnxiety@vibes.com",
+      "isStaff": true
+    },
+    {
+      "email": "Charlie@Manson.com",
+      "fullName": "Charles Manson",
+      "profileName": "Manson_Family",
+      "isStaff": true,
+      "id": 7
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "address": "2802 Zula Locks",
+      "phoneNumber": "852-837-9713",
+      "userId": 2
+    },
+    {
+      "id": 2,
+      "address": "56849 Fadel Gateway",
+      "phoneNumber": "202-244-7090",
+      "userId": 1
+    },
+    {
+      "id": 3,
+      "address": "7346 Ritchie Road",
+      "phoneNumber": "(507) 720-1157",
+      "userId": 3
+    }
+  ],
+  "posts": [
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 2,
+      "dateSubmitted": "2022-12-09T19:57:01.991Z",
+      "content": "",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "topicId": 1,
+      "content": "stuff here",
+      "dateSubmitted": "content",
+      "isApproved": true,
+      "anonymous": true,
+      "moderatorId": 3
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 4,
+      "dateSubmitted": "2022-12-09T20:13:41.653Z",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 3
+    },
+    {
+      "id": 4,
+      "userId": 2,
+      "topicId": 1,
+      "content": "stuff here",
+      "dateSubmitted": "content",
+      "isApproved": true,
+      "anonymous": true,
+      "moderatorId": 3
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 2,
+      "dateSubmitted": "2022-12-09T19:56:47.171Z",
+      "content": "",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 5
+    },
+    {
+      "id": 6,
+      "userId": 2,
+      "topicId": 1,
+      "content": "stuff here",
+      "dateSubmitted": "content",
+      "isApproved": true,
+      "anonymous": true,
+      "moderatorId": 3
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 4,
+      "dateSubmitted": "2022-12-09T19:54:19.716Z",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 7
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 2,
+      "dateSubmitted": "2022-12-09T19:56:30.460Z",
+      "content": "",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 8
+    },
+    {
+      "dateSubmitted": "2022-12-09T16:39:32.079Z",
+      "id": 9
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 3,
+      "dateSubmitted": "2022-12-09T20:05:56.938Z",
+      "content": "ffffffffff",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 10
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 5,
+      "dateSubmitted": "2022-12-09T20:05:50.804Z",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 11
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 3,
+      "dateSubmitted": "2022-12-09T20:01:44.450Z",
+      "isApproved": true,
+      "anonymous": false,
+      "id": 12
+    }
+  ],
+  "topics": [
+    {
+      "name": "Bipolar",
+      "id": 1
+    },
+    {
+      "name": "Depression",
+      "id": 2
+    },
+    {
+      "name": "ADD",
+      "id": 3
+    },
+    {
+      "name": "Anxiety",
+      "id": 4
+    },
+    {
+      "name": "Schizophrenia",
+      "id": 5
+    }
+  ]
+}
