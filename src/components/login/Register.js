@@ -26,7 +26,7 @@ export const Register = (props) => {
                         staff: createdUser.isStaff
                     }))
 
-                    navigate("/")
+                    navigate("/home")
                 }
             })
     }
@@ -75,7 +75,7 @@ export const Register = (props) => {
                         type="email" id="email" className="form-control"
                         placeholder="Email address" required />
                 </fieldset>
-                <fieldset>
+                {/* <fieldset>
                     <input onChange={(evt) => {
                         const copy = {...customer}
                         copy.isStaff = evt.target.checked
@@ -83,7 +83,7 @@ export const Register = (props) => {
                     }}
                         type="checkbox" id="isStaff" />
                     <label htmlFor="email"> I am an employee </label>
-                </fieldset>
+                </fieldset> */}
                 <fieldset>
                     <button type="submit"> Register </button>
                 </fieldset>

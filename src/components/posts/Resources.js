@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom"
+import "./Posts.css"
 
 
 export const Resources = ({post, setPosts, setPostList, currentUser}) => { 
@@ -85,8 +86,9 @@ const closeTicket = () => {
         }))
 }
 return <>
-
-    <div>{post.content}</div>
+    <div className="content_container">
+    <div className="content">{post.content}</div>
+    <div className="content">Topic: {post?.topic?.name}</div>
     {
         
     EditButton()
@@ -94,5 +96,6 @@ return <>
     {
     deleteButton()
     }
+    </div>
     </>
 }

@@ -1,15 +1,32 @@
+a:hover { text-decoration: none; color: black; }
+
 .navbar {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: left;
+    /* justify-content: left; */
+    background: #4267B2;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .navbar__item {
-    flex-basis: 20%;
+    /* flex-basis: 15%; */
     list-style-type: none;
+    display: flex;
+    justify-content: space-between;
 }
 
-.navbar__logout {
+/* .navbar__logout {
     margin-left: auto;
-}
+} */
 
+.navbar__link{
+    font-family: Trebuchet;
+    font-size: large;
+    margin: auto;
+    color: whitesmoke;
+    margin-top: auto;
+    text-decoration: none;
+    
+}

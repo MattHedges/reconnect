@@ -14,9 +14,9 @@ export const EditForm = () => {
     const [post, updatePost] = useState({
         // userId: 0,
         // isPost: true,
-        // topicId: 0,
+        topicId: 0,
         // dateSubmitted: "",
-        // content: "",
+        content: "",
         // isApproved: true,
         // anonymous: false,
         // moderatorId: 0
@@ -36,7 +36,12 @@ export const EditForm = () => {
     .then((topicsArray) => {
         updateTopics(topicsArray)
     })
-    .then(fetch(`http://localhost:8088/posts?id=${postId}`))
+},
+[]
+    )
+    
+    useEffect(() => {
+    (fetch(`http://localhost:8088/posts?id=${id}`))
     .then(response => response.json())
     .then((data) => {
         const postObject = data[0]
@@ -68,7 +73,7 @@ export const EditForm = () => {
         }
 
         // TODO: Perform the fetch() to POST the object to the API
-        return fetch(`http://localhost:8088/posts/${postId}` , {
+        fetch(`http://localhost:8088/posts/${postId}` , {
             method: "PUT",
             headers: {
             "Content-Type": "application/json"
@@ -80,7 +85,7 @@ export const EditForm = () => {
             navigate("/posts")
         })   
         }
-
+console.log(updatePost)
     return (
         <form className="contributeForm">
             <h2 className="contributeForm__title">Contribute</h2>
@@ -91,8 +96,8 @@ export const EditForm = () => {
                         required autoFocus
                         type="text"
                         className="form-control"
-                        placeholder={post.content}
-                        value={post.content}
+                        
+                        defaultValue={post?.content}
                         onChange={
                             (evt) => {
                                 const copy={...post}
@@ -106,7 +111,7 @@ export const EditForm = () => {
             <fieldset>
             <div className="form-group">
             <select onChange={(evt) => {
-                const copy = { ...topics };
+                const copy = { ...post };
                 copy.topicId = parseInt(evt.target.value);
                 updatePost(copy);
             }}>
@@ -137,8 +142,8 @@ export const EditForm = () => {
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
              className="btn btn-primary">
-                Submit Post
+                Edit Post
             </button>
         </form>
     )
-}
+        }

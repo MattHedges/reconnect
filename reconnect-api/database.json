@@ -11,7 +11,7 @@
       "id": 2,
       "fullName": "Jeffrey Dahmer",
       "profileName": "mystery_meat",
-      "email": "normaldude@aol.com",
+      "email": "normaldude@hotmail.com",
       "isStaff": false
     },
     {
@@ -48,6 +48,27 @@
       "profileName": "Manson_Family",
       "isStaff": true,
       "id": 7
+    },
+    {
+      "email": "turtleman@turtles.com",
+      "fullName": "John Smith",
+      "isStaff": false,
+      "profileName": "ILikeTurtles",
+      "id": 8
+    },
+    {
+      "email": "new@new.com",
+      "fullName": "New User",
+      "isStaff": false,
+      "profileName": "newprofile",
+      "id": 9
+    },
+    {
+      "email": "depressed@sadness.net",
+      "fullName": "second new user",
+      "isStaff": false,
+      "profileName": "sadguy",
+      "id": 10
     }
   ],
   "customers": [
@@ -72,114 +93,70 @@
   ],
   "posts": [
     {
-      "userId": 1,
-      "isPost": true,
-      "topicId": 2,
-      "dateSubmitted": "2022-12-09T19:57:01.991Z",
-      "content": "",
-      "isApproved": true,
-      "anonymous": false,
-      "id": 1
-    },
-    {
-      "id": 2,
-      "userId": 2,
-      "topicId": 1,
-      "content": "stuff here",
-      "dateSubmitted": "content",
-      "isApproved": true,
-      "anonymous": true,
-      "moderatorId": 3
-    },
-    {
-      "userId": 1,
-      "isPost": true,
-      "topicId": 4,
-      "dateSubmitted": "2022-12-09T20:13:41.653Z",
-      "isApproved": true,
-      "anonymous": false,
-      "id": 3
-    },
-    {
-      "id": 4,
-      "userId": 2,
-      "topicId": 1,
-      "content": "stuff here",
-      "dateSubmitted": "content",
-      "isApproved": true,
-      "anonymous": true,
-      "moderatorId": 3
-    },
-    {
-      "userId": 1,
-      "isPost": true,
-      "topicId": 2,
-      "dateSubmitted": "2022-12-09T19:56:47.171Z",
-      "content": "",
-      "isApproved": true,
-      "anonymous": false,
-      "id": 5
-    },
-    {
-      "id": 6,
-      "userId": 2,
-      "topicId": 1,
-      "content": "stuff here",
-      "dateSubmitted": "content",
-      "isApproved": true,
-      "anonymous": true,
-      "moderatorId": 3
-    },
-    {
-      "userId": 1,
-      "isPost": true,
-      "topicId": 4,
-      "dateSubmitted": "2022-12-09T19:54:19.716Z",
-      "isApproved": true,
-      "anonymous": false,
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "isPost": true,
-      "topicId": 2,
-      "dateSubmitted": "2022-12-09T19:56:30.460Z",
-      "content": "",
-      "isApproved": true,
-      "anonymous": false,
-      "id": 8
-    },
-    {
-      "dateSubmitted": "2022-12-09T16:39:32.079Z",
-      "id": 9
-    },
-    {
-      "userId": 1,
+      "userId": 7,
       "isPost": true,
       "topicId": 3,
-      "dateSubmitted": "2022-12-09T20:05:56.938Z",
-      "content": "ffffffffff",
+      "dateSubmitted": "2022-12-14T21:22:16.714Z",
+      "content": "I made this change at the end of the day",
       "isApproved": true,
       "anonymous": false,
-      "id": 10
+      "moderatorId": 7,
+      "id": 14
+    },
+    {
+      "userId": 1,
+      "isPost": false,
+      "topicId": 3,
+      "dateSubmitted": "2022-12-16T15:41:43.450Z",
+      "content": "this is not a post",
+      "isApproved": true,
+      "anonymous": false,
+      "moderatorId": 5,
+      "id": 20
+    },
+    {
+      "userId": 1,
+      "isPost": false,
+      "topicId": 1,
+      "dateSubmitted": "2022-12-16T15:42:13.644Z",
+      "content": "idk what I'm doing",
+      "isApproved": true,
+      "anonymous": false,
+      "moderatorId": 5,
+      "id": 21
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 4,
+      "dateSubmitted": "2022-12-16T19:38:56.264Z",
+      "content": "asrgrgthefdefwgtrewgewg",
+      "isApproved": false,
+      "anonymous": false,
+      "moderatorId": 0,
+      "id": 22
     },
     {
       "userId": 1,
       "isPost": true,
       "topicId": 5,
-      "dateSubmitted": "2022-12-09T20:05:50.804Z",
-      "isApproved": true,
+      "dateSubmitted": "2022-12-16T19:39:03.217Z",
+      "content": "dghtrgsbehgrgewrbfrbr",
+      "isApproved": false,
       "anonymous": false,
-      "id": 11
+      "moderatorId": 0,
+      "id": 23
     },
     {
       "userId": 1,
       "isPost": true,
-      "topicId": 3,
-      "dateSubmitted": "2022-12-09T20:01:44.450Z",
+      "topicId": 2,
+      "dateSubmitted": "2022-12-16T20:22:29.868Z",
+      "content": "I am so sad. idk what to do",
       "isApproved": true,
       "anonymous": false,
-      "id": 12
+      "moderatorId": 7,
+      "id": 24
     }
   ],
   "topics": [

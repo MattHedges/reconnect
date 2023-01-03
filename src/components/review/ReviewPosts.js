@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom"
+import "./Reviews.css"
 
 
 export const ReviewPosts = ({post, getAllPosts, currentUser, setPosts, setPostList}) => { 
@@ -71,9 +72,13 @@ const deleteButton = () => {
 }
 
 return <>
+<div className="content_container">
     <div>Content: {post.content}</div> <div>Topic: {post?.topic?.name}</div>
     {
         deleteButton()
+    }
+    {
+        
     }
     
        
@@ -94,7 +99,7 @@ return <>
         } />
 </div>
 </fieldset>
-    
+    </div>
     </>
 }
 

@@ -1,0 +1,27 @@
+.posts {
+    border: inline;
+}
+
+.post__finish {
+
+}
+
+.post__Edit {
+
+}
+
+.content {
+padding: 10px;
+}
+
+.content_container {
+    padding: 10px;
+    margin: 20px;
+    border: 10px inset #2d898b;
+    border-radius: 10px;
+    background: #88ccf1;
+}
+
+body {
+    background-color: #6D9DC5;
+}

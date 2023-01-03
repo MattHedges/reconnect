@@ -10,11 +10,11 @@ export const ContributeForm = () => {
     const [topics, updateTopics] = useState([])
     const [post, updatePost] = useState({
         userId: 0,
-        isPost: true,
+        isPost: false,
         topicId: 0,
         dateSubmitted: "",
         content: "",
-        isApproved: true,
+        isApproved: false,
         anonymous: false,
         moderatorId: 0
             
@@ -48,11 +48,11 @@ export const ContributeForm = () => {
         // TODO: Create the object to be saved to the API
         const postToSendToAPI = {
             userId: reconnectUserObject.id,
-            isPost: true,
+            isPost: post.isPost,
             topicId: post.topicId,
             dateSubmitted: new Date(),
             content: post.content,
-            isApproved: true,
+            isApproved: false,
             anonymous: false,
             moderatorId: post.userId
 
@@ -72,14 +72,15 @@ export const ContributeForm = () => {
             body: JSON.stringify(postToSendToAPI)
     })
         .then(response => response.json())
-        .then(() => {
+        .then(() => { 
+            // put if else statement here to route to specific page using navigate
             navigate("/posts")
         })   
         }
 
     return (
         <form className="contributeForm">
-            <h2 className="contributeForm__title">Contribute</h2>
+            <h1 className="contributeForm__title">Contribute</h1>
             <fieldset>
                 <div className="form-group">
                     <label htmlFor="content">Content:</label>
@@ -91,9 +92,8 @@ export const ContributeForm = () => {
                         value={post.content}
                         onChange={
                             (evt) => {
-                                const copy={...post}
+                                const copy = {...post}
                                 copy.content = evt.target.value
-                                // passes copy back to be the new state of the page
                                 updatePost(copy)
                             }
                         } />
@@ -102,7 +102,7 @@ export const ContributeForm = () => {
             <fieldset>
             <div className="form-group">
             <select onChange={(evt) => {
-                const copy = { ...topics };
+                const copy = { ...post };
                 copy.topicId = parseInt(evt.target.value);
                 updatePost(copy);
             }}>
@@ -114,25 +114,25 @@ export const ContributeForm = () => {
             </select>
         </div>
         </fieldset>
-            {/* <fieldset>
+            <fieldset>
                 <div className="form-group">
-                    <label htmlFor="name">Anonymous:</label>
+                    <label htmlFor="name">Community Post:</label>
                     <input type="checkbox"
-                        value={post.anonymous}
+                        value={post.isPost}
                         onChange={
                             (evt) => {
                                 // copy variable below creates a copy of existing state... shorthand notation for copying the existing state is {...ticket}
                                 const copy = {...post}
                                 // modifying the copy of the existing state. new value of description property should be whatever the current value of the input value is. whatever is currently in the input field
-                                copy.anonymous = evt.target.checked
+                                copy.isPost = !post.isPost
                                 updatePost(copy)
                             }
                         } />
                 </div>
-            </fieldset> */}
-            <button
+            </fieldset>
+            <button 
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-             className="btn btn-primary">
+             className="button">
                 Submit Post
             </button>
         </form>
