@@ -46,6 +46,26 @@ export const ReviewPosts = ({post, getAllPosts, currentUser, setPosts, setPostLi
         
     }
 
+    const EditButton = () => {
+        if (currentUser.staff === true || currentUser.id === post.userId) {
+            return <button onClick={() => { navigate(`/posts/postEdit/${post.id}`)
+                // fetch(`http://localhost:8088/posts/pos${post.id}`, {
+                //     method: "PUT",
+                //     headers: {
+                //         "Content-Type": "application/json"
+                //     },
+                //     body: JSON.stringify()
+                // })
+                //     .then(() => {
+                //         getAllPosts()
+                //     })
+            }} className="button">Edit</button>
+        }
+        else {
+            return ""
+        }
+    }
+
 const deleteButton = () => {
     if (currentUser.staff || currentUser.id === post.userId) {
         return <button onClick={() => {
@@ -64,7 +84,7 @@ const deleteButton = () => {
                         setPostList(copyFilter)
                     })
                 })
-        }} className="post__finish">Delete</button>
+        }} className="button">Delete</button>
     }
     else {
         return ""
@@ -78,7 +98,7 @@ return <>
         deleteButton()
     }
     {
-        
+        EditButton()
     }
     
        

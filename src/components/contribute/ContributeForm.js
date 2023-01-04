@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-
+import "./Contribute.css"
 export const ContributeForm = () => {
     const navigate = useNavigate()
     /*

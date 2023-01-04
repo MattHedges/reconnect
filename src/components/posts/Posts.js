@@ -29,7 +29,7 @@ const deleteButton = () => {
                     })
                 })
                 
-        }} className="post__finish">Delete</button>
+        }} className="button">Delete</button>
     }
     else {
         return ""
@@ -49,7 +49,7 @@ const EditButton = () => {
             //     .then(() => {
             //         getAllPosts()
             //     })
-        }} className="post__Edit">Edit</button>
+        }} className="button">Edit</button>
     }
     else {
         return ""

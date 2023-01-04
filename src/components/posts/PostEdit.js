@@ -141,7 +141,7 @@ console.log(updatePost)
             </fieldset> */}
             <button
                 onClick={(clickEvent) => handleSaveButtonClick(clickEvent)}
-             className="btn btn-primary">
+             className="button">
                 Edit Post
             </button>
         </form>

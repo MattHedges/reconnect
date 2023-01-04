@@ -2,6 +2,9 @@ import { useNavigate, useParams } from "react-router-dom"
 import "./Posts.css"
 
 
+
+
+
 export const Resources = ({post, setPosts, setPostList, currentUser}) => { 
     const navigate = useNavigate()
     const handleEdit = (click) => {
@@ -29,7 +32,7 @@ const deleteButton = () => {
                         setPostList(copyFilter)
                     })
                 })
-        }} className="post__finish">Delete</button>
+        }} className="button">Delete</button>
     }
     else {
         return ""
@@ -54,7 +57,7 @@ const EditButton = () => {
                         setPostList(copyFilter)
                     })
                 })
-        }} className="post__Edit">Edit</button>
+        }} className="button">Edit</button>
     }
     else {
         return ""

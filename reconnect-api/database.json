@@ -105,47 +105,14 @@
     },
     {
       "userId": 1,
-      "isPost": false,
-      "topicId": 3,
-      "dateSubmitted": "2022-12-16T15:41:43.450Z",
-      "content": "this is not a post",
-      "isApproved": true,
-      "anonymous": false,
-      "moderatorId": 5,
-      "id": 20
-    },
-    {
-      "userId": 1,
-      "isPost": false,
-      "topicId": 1,
-      "dateSubmitted": "2022-12-16T15:42:13.644Z",
-      "content": "idk what I'm doing",
-      "isApproved": true,
-      "anonymous": false,
-      "moderatorId": 5,
-      "id": 21
-    },
-    {
-      "userId": 1,
-      "isPost": true,
-      "topicId": 4,
-      "dateSubmitted": "2022-12-16T19:38:56.264Z",
-      "content": "asrgrgthefdefwgtrewgewg",
-      "isApproved": false,
-      "anonymous": false,
-      "moderatorId": 0,
-      "id": 22
-    },
-    {
-      "userId": 1,
       "isPost": true,
       "topicId": 5,
-      "dateSubmitted": "2022-12-16T19:39:03.217Z",
-      "content": "dghtrgsbehgrgewrbfrbr",
-      "isApproved": false,
+      "dateSubmitted": "2023-01-04T15:14:54.285Z",
+      "content": "I made a change to this post",
+      "isApproved": true,
       "anonymous": false,
-      "moderatorId": 0,
-      "id": 23
+      "moderatorId": 1,
+      "id": 21
     },
     {
       "userId": 1,
@@ -157,11 +124,88 @@
       "anonymous": false,
       "moderatorId": 7,
       "id": 24
+    },
+    {
+      "userId": 2,
+      "isPost": true,
+      "topicId": 1,
+      "dateSubmitted": "2023-01-04T03:28:36.274Z",
+      "content": "I made this post at 9:28pm",
+      "isApproved": false,
+      "anonymous": false,
+      "moderatorId": 0,
+      "id": 25
+    },
+    {
+      "userId": 2,
+      "isPost": true,
+      "topicId": 4,
+      "dateSubmitted": "2023-01-04T03:28:59.645Z",
+      "content": "I made this post the night before my presentation",
+      "isApproved": false,
+      "anonymous": false,
+      "moderatorId": 0,
+      "id": 26
+    },
+    {
+      "userId": 2,
+      "isPost": true,
+      "topicId": 1,
+      "dateSubmitted": "2023-01-04T03:32:17.030Z",
+      "content": "I made this post at 9:31pm on 1/3/23",
+      "isApproved": false,
+      "anonymous": false,
+      "moderatorId": 0,
+      "id": 27
+    },
+    {
+      "userId": 2,
+      "isPost": false,
+      "topicId": 2,
+      "dateSubmitted": "2023-01-04T03:33:38.978Z",
+      "content": "https://www.samhsa.gov/serious-mental-illness/major-depression",
+      "isApproved": true,
+      "anonymous": false,
+      "moderatorId": 7,
+      "id": 28
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 2,
+      "dateSubmitted": "2023-01-04T03:34:47.403Z",
+      "content": "I'm sad today",
+      "isApproved": false,
+      "anonymous": false,
+      "moderatorId": 0,
+      "id": 29
+    },
+    {
+      "userId": 1,
+      "isPost": false,
+      "topicId": 4,
+      "dateSubmitted": "2023-01-04T03:37:16.674Z",
+      "content": "https://www.medicalnewstoday.com/articles/323454",
+      "isApproved": false,
+      "anonymous": false,
+      "moderatorId": 0,
+      "id": 30
+    },
+    {
+      "userId": 1,
+      "isPost": true,
+      "topicId": 6,
+      "dateSubmitted": "2023-01-04T15:12:30.280Z",
+      "content": "I made this post at 9:12 am",
+      "isApproved": true,
+      "anonymous": false,
+      "moderatorId": 7,
+      "id": 31
     }
   ],
   "topics": [
     {
-      "name": "Bipolar",
+      "name": "Bipolar Disorder",
       "id": 1
     },
     {
@@ -169,7 +213,7 @@
       "id": 2
     },
     {
-      "name": "ADD",
+      "name": "ADHD",
       "id": 3
     },
     {
@@ -179,6 +223,10 @@
     {
       "name": "Schizophrenia",
       "id": 5
+    },
+    {
+      "name": "Addiction",
+      "id": 6
     }
   ]
 }
